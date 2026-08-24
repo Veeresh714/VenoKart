@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VenoKart</title>
+    <!-- Razorpay's checkout script - provides the window.Razorpay class
+         we use in Checkout.jsx to open the payment popup. Loading it here
+         (once, for the whole app) is simpler for beginners than writing
+         a dynamic script-injection utility. -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <!-- React mounts our entire app inside this single div. -->
+    <div id="root"></div>
+    <!-- Vite injects and processes our JS entry point here. -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
